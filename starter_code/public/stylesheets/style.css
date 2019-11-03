@@ -1,4 +1,139 @@
-.active-pink-2 input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #f48fb1;
-  box-shadow: 0 1px 0 0 #f48fb1;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-3 {
+  margin: 3px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-3 {
+  padding: 3px;
+}
+
+html, body {
+  height: 100%;
+  background-image: url("/images/background.jpg");
+  background-size: 1350px;
+  /* background:linear-gradient(120deg, #1db954, #191414); */
+}
+
+
+.index {
+  display: flex;
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+#home-page {
+  width: 40%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+#home-page .txt-artist{
+  width: 80%;
+}
+
+#home-page .btn-search {
+  width: 30%;
+  cursor: pointer;
+}
+
+
+.artists, .albums {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+}
+
+.artist, .album {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  height: 50%;
+  margin: 10px 0;
+}
+
+.artist img, .album img {
+  height: 80%;
+  width: 70%;
+}
+
+.artist-album, .album-track {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #483C3C;
+}
+
+.lbl-name {
+  font-weight: bold;;
+  font-size: 1rem;
+  color: white;
+
+}
+
+.btn-view {
+  text-decoration: none;
+  background-color: tomato;;
+  color: white;
+}
+
+.tracks-info {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.title-info {
+  margin-left: 120px;
+}
+
+.track-info {
+  margin-right: 120px;
+}
+
+.tracks {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: cornsilk;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.track h1 {
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+.track audio {
+  padding-right: 20px;
+} 

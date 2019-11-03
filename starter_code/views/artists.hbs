@@ -1,0 +1,15 @@
+<div class="artists">
+  {{#each artists}}
+    <div class="artist">
+      {{#if this.images.0.url}}
+        <img src={{this.images.0.url}} alt="{{this.name}}">
+      {{else}}
+        <img src="images/not_found.jpeg" alt="Image not found">
+      {{/if}}
+      <div class="artist-album">
+        <h2 class="lbl-name p-3 m-3">{{this.name}}</h2>
+        <a class="btn-view p-3 m-3" href="/albums/{{this.id}}">View Albums</a>
+      </div>
+    </div>
+  {{/each}}
+</div> 
